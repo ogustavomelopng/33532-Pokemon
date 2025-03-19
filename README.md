@@ -1,2 +1,2 @@
 # 33532-Pokemon
-Pokedex da região de kalos
+Pokedex da região de kalos 
