@@ -1,0 +1,85 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+header {
+    background-color: #3b9e5e;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilo da lista de Pokémon (grade 3x24) */
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.pokemon-item {
+    cursor: pointer;
+    text-align: center;
+}
+
+.pokemon-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.3s; /* Suaviza a troca das imagens */
+}
+
+/* Estilo das informações do Pokémon */
+.pokemon-info {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-info h2 {
+    color: #3b9e5e;
+}
+
+table {
+    margin: 20px auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    text-align: left;
+    background-color: #e1f5c4;
+}
+
+td {
+    text-align: left;
+}
+
+/* Botão de voltar */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3b9e5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2a703e;
+}

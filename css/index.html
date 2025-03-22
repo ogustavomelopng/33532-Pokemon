@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Online</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pokédex Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Minha Loja</h1>
+        <h1>Pokédex Dinâmica</h1>
     </header>
-    
-    <main>
-        <section class="produtos">
-            <div class="produto">
-                <img src="https://via.placeholder.com/150" alt="Produto 1">
-                <h2>Produto 1</h2>
-                <p>R$ 50,00</p>
-                <button onclick="adicionarAoCarrinho('Produto 1', 50)">Adicionar ao Carrinho</button>
-            </div>
-            <div class="produto">
-                <img src="https://via.placeholder.com/150" alt="Produto 2">
-                <h2>Produto 2</h2>
-                <p>R$ 70,00</p>
-                <button onclick="adicionarAoCarrinho('Produto 2', 70)">Adicionar ao Carrinho</button>
-            </div>
-        </section>
-    </main>
-    
-    <aside>
-        <h2>Carrinho</h2>
-        <ul id="carrinho-lista"></ul>
-        <p>Total: R$ <span id="total">0,00</span></p>
-    </aside>
-    
-    <script src="script.js"></script>
+
+    <div class="pokemon-list">
+        <!-- Pokémon 1 -->
+        <div class="pokemon-item">
+            <img src="chespin.png" alt="Chespin" class="pokemon-thumbnail" 
+                 onmouseover="this.src='chespinshiny.png'" 
+                 onmouseout="this.src='chespin.png'"
+                 onclick="mostrarPokemon('chespin')">
+            <p>Chespin</p>
+        </div>
+
+        <!-- Pokémon 2 -->
+        <div class="pokemon-item">
+            <img src="fennekin.png" alt="Fennekin" class="pokemon-thumbnail" 
+                 onmouseover="this.src='fennekin_shiny.png'" 
+                 onmouseout="this.src='fennekin.png'"
+                 onclick="mostrarPokemon('fennekin')">
+            <p>Fennekin</p>
+        </div>
+        <!-- Continue com os outros Pokémon aqui -->
+    </div>
+
+    <div id="pokemon-info" class="pokemon-info">
+        <!-- Informações do Pokémon serão exibidas aqui -->
+    </div>
+
+    <script src="teste.js"></script>
 </body>
 </html>
