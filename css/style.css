@@ -1,47 +1,90 @@
+/* Resetando margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #ffcc00;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
-    font-size: 24px;
 }
 
+/* Cabeçalho */
+header {
+    background-color: black;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container de Pokémon */
 .pokemon-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Definindo 3 colunas */
+    grid-template-rows: repeat(24, auto); /* Definindo 24 linhas */
     gap: 20px;
     padding: 20px;
     justify-items: center;
+    margin-top: 20px;
 }
 
+/* Item de Pokémon */
 .pokemon-item {
     background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 150px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.pokemon-item:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Imagem do Pokémon */
 .pokemon-item img {
     width: 100px;
     height: 100px;
-    transition: 0.3s;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
+.pokemon-item img:hover {
+    transform: rotate(15deg); /* Efeito de rotação na imagem ao passar o mouse */
+}
+
+/* Botão de ação */
 .pokemon-item button {
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 8px 15px;
     background-color: #ff6600;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .pokemon-item button:hover {
     background-color: #cc5500;
+    transform: translateY(-2px); /* Levanta o botão um pouco ao passar o mouse */
+}
+
+.pokemon-item button:active {
+    transform: translateY(2px); /* Efeito de pressionar o botão */
 }
