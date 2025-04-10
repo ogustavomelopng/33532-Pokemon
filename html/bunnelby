@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunnelby - Detalhes</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <header>
+        <h1>Bunnelby</h1>
+    </header>
+
+    <div class="pokemon-details">
+        <img src="../imagens/bunnelby.png" alt="Bunnelby">
+        <h2>Descrição</h2>
+        <p>Bunnelby é um Pokémon do tipo Normal. Ele é conhecido por sua habilidade de escavar e cavar túneis rapidamente com suas poderosas orelhas. Bunnelby vive em campos e florestas, onde usa suas habilidades de escavação para se esconder de predadores e para encontrar comida. Sua natureza curiosa e ativa faz dele um Pokémon muito ágil e em constante movimento. Quando se sente ameaçado, Bunnelby pode usar suas orelhas como armas para atacar rapidamente seus inimigos.</p>
+
+        <h2>Status</h2>
+        <table>
+            <tr><th>HP</th><td>38</td></tr>
+            <tr><th>Ataque</th><td>36</td></tr>
+            <tr><th>Defesa</th><td>38</td></tr>
+            <tr><th>Sp. Ataque</th><td>32</td></tr>
+            <tr><th>Sp. Defesa</th><td>36</td></tr>
+            <tr><th>Velocidade
